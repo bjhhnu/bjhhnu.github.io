@@ -99,9 +99,9 @@
 				</section>
 
 
-				<!-- Programmiersprache, Tipps für Umsteiger -->
+				<!-- Programmiersprache, Tipps für Umsteiger  -->
 				<section>
-					<section data-background-iframe="https://www.mentimeter.com/app/presentation/0b4391851ad5c008e7619fe4ec21dfa4/06ed35b4fd2a"></section>
+					<!--<section data-background-iframe="https://www.mentimeter.com/app/presentation/0b4391851ad5c008e7619fe4ec21dfa4/06ed35b4fd2a"></section>-->
 					<h4>Programmiersprache</h4>
 					<p>Python</p>
 				</section>
@@ -135,13 +135,86 @@
 
 				<!-- Bauplan -->
 				<section>
+					<h4>Der Bauplan</h4>
+					<img src="img/zombies/1912785207_blueprint_for_the_anatomy_of_a_zombie_on_an_old_paper.PNG" alt="zombie structure" style="height: 70%; background: transparent;">
+				</section>
+
+				<!-- Grundbegriffe I -->
+				<section>
 					<section>
-						<h4>Der Bauplan</h4>
-						<img src="img/zombies/1912785207_blueprint_for_the_anatomy_of_a_zombie_on_an_old_paper.PNG" alt="zombie structure" style="height: 70%; background: transparent;">
+						<h4>Grundbegriffe (I)</h4>
+						<img src="img/vokabular_fokus_geruest.PNG" alt="geruest vokabular" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<h4>Begriffe (I)</h4>
+						<img src="img/vokabular_geruest_erklaerung.PNG" alt="geruest erklaerung" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<h4>Code</h4> <!-- Dunder Functions, Scopes -->
+						<p><small>Klasse, Konstruktor, Instanz</small></p>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|1-2|3-6|9-11|13-16|"><script type="text/template">
+							# Klasse
+							class Zombie:
+
+								# Konstruktor
+								def __init__(self):
+									pass
+
+
+							# Instanzen
+							frankenstein = Zombie()
+							walking_dead = Zombie()
+
+							print(frankenstein)
+							# >>> <__main__.Zombie object at 0x00000290ABFF6820>
+							print(walking_dead)
+							# >>> <__main__.Zombie object at 0x00000290ABFEF910>
+						</script></code></pre>
 					</section>
 				</section>
 
 
+				<!-- Grundbegriffe II -->
+				<section>
+					<section>
+						<h4>Grundbegriffe (II)</h4>
+						<img src="img/vokabular_fokus_geruest_II.PNG" alt="geruest vokabular" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<h4>Begriffe (II)</h4>
+						<img src="img/vokabular_geruest_erklaerung_II.PNG" alt="geruest erklaerung" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<h4>Code</h4>
+						<p><small>Attribute. Klassen- und Instanzvariablen</small></p>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|3-4|7-8|10-12|14-18|"><script type="text/template">
+							class Zombie:
+
+							# Klassenvariable
+							kind = 'standard-level'
+
+							def __init__(self, name):
+								# Instanzvariable
+								self.name = name
+
+							frankenstein = Zombie('Frankenstein')
+							print(frankenstein.name)
+							# >>> Frankenstein
+
+							walking_dead = Zombie('Walking Dead')
+							print(frankenstein.kind)
+							print(walking_dead.kind)
+							# >>> standard-level
+							# >>> standard-level
+						</script></code></pre>
+					</section>
+				</section>
+
+				<!-- Übung Name generator -->
+				<section>
+					<h4>Übung</h4>
+					<img src="img/namensgenerator.PNG" alt="uebung generator" style="height: 70%; background: transparent;">
+				</section>
 
 			</div>
 		</div>
