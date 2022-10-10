@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,104 +17,143 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+
+				<!-- Intro -->
 				<section>
-					<h3>Einführung in die objektorientierte Programmierung...</h3>
-					<p>
-						<small>Burkhard Hoppenstedt, 11.10.2022</small>
-					</p>
+					<section>
+						<h3>Einführung in die objektorientierte Programmierung (OOP)...</h3>
+						<p>
+							<small>Burkhard Hoppenstedt, 11.10.2022</small>
+						</p>
+					</section>
+
+					<section>
+						<h3>... anhand eines erstaunlichen Beispiels</h3>
+						<img src="img/zombies/2266891988_cartoon_zombies_in_a_cinema.png" alt="zombie cinema" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;">
+					</section>
+
+					<!-- Vorstellung -->
+					<section>
+						<h4>Das bin ich</h4>
+						<img src="img/intro.PNG" alt="intro" style="height: 70%; background: transparent;">
+					</section>
 				</section>
 
-
+				<!-- Motivation, Background -->
 				<section>
-					<h3>... anhand eines erstaunlichen Beispiels</h3>
-					<img src="img/zombies/2266891988_cartoon_zombies_in_a_cinema.png" alt="zombie cinema" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;">
-				</section>
+					<section>
+						<h4>Was bisher geschah...</h4>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|1-4|6-10|12-15|"><script type="text/template">
+								# Variablen
+								text = "textvariable"
+								zahl = 5
+								liste = [1, 2, 3, 4, 5]
 
-				<!-- Vorstellung -->
-				<section>
-					<h4>Das bin ich</h4>
-					<img src="img/intro.PNG" alt="intro" style="height: 70%; background: transparent;">
-				</section>
+								# Funktionen
+								def gebe_liste_aus(liste):
+									for element in liste:
+										print(element)
 
-				<!-- Einordnung <a href="material/Test.pdf">PDF</a>-->
-				<section>
-					<h4>Einordnung in das Studium</h4>
-					<img src="img/semesterplan.PNG" alt="intro" style="height: 70%; background: transparent;">
-				</section>
 
-				<!-- LERNZIELE -->
-				<section>
+								# Programmablauf
+								print("Willkommen zum Programm")
+								print("In der Liste sind folgende Zahlen enthalten")
+								gebe_liste_aus(liste)
+							</script></code></pre>
+					</section>
+
+					<!-- Einordnung <a href="material/Test.pdf">PDF</a>-->
+					<section>
+						<h4>Einordnung in das Studium</h4>
+						<img src="img/semesterplan.PNG" alt="intro" style="height: 70%; background: transparent;">
+					</section>
+
+					<!-- LERNZIELE -->
 					<section>
 						<h4>Lernziele</h4>
 						<small>
 							<ol>
-								<li>Grundverständnis des Konzepts OOP</li>
+								<li>Grundverständnis des Konzeptes OOP</li>
 								<li>Wichtigste Grundbegriffe kennen</li>
 								<li>OOP Grundlagen in Python gesehen haben</li>
-								<li>Ansatzpunkte für weitere Materialien verstanden</li>
 							</ol>
 						</small>
 					</section>
-					<section>
-						<h4>Lernziele (ausführlicher)</h4>
-						<small>
-							<ol>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ol>
-						</small>
-					</section>
-
 				</section>
+
 
 
 				<!-- EINE EINORDNUNG, GESCHICHTE der OOP, andere Programmierstile (Aspektorientiert, Datenorientiert) -->
 				<section>
 					<section>
-						<h4>Eine erste Einordnung</h4>
-						<p><small>Objektorientierte Programmierung ist ein <i>Programmierstil</i>, der die <i>Komplexität</i> von Programmen reduzieren kann.
-							Mit Objekten werden Teile des Programmes <i>abstrahiert</i> und können wie Bausteine zusammengesetzt werden. </small></p>
+						<h4>Denken in Objekten/Modellen</h4>
+						<p><small>Die Realität wird durch ein objektorientiertes Modell abgebildet. Hierbei findet eine Abstraktion statt.
+							Ein Objekt kann einen Zustand und ein Verhalten haben.
+						</small></p>
+						<img src="img/intro_beispiele/kamera.PNG" alt="kamera" style="height: 70%; background: transparent;">
 					</section>
 					<section>
-						<h4>Keine allgemeingültige Definition</h4>
-						<p><small>„Bezieht sich auf eine Technik oder Programmiersprache, welche Objekte, Klassen und Vererbung unterstützt.“ – ISO/IEC 2382-15  </small></p>
+						<h4>Ein Beispiel: Das Eichhörnchen</h4>
+						<img src="img/intro_beispiele/eichhörnchen.PNG" alt="eichhörnchen" style="height: 70%; background: transparent;">
 					</section>
 					<section>
-						<h4>Zu berücksichtigende Aspekte</h4>
-						<small>
-							<ul>
-								<li>Struktur. Objekte benötigen eine zusätzliche Syntax, um Daten und Funktionen zu kombinieren.</li>
-								<li>Beziehungen. Für komplexe Systeme müssen Objekte miteinander kombiniert werden.</li>
-								<li>Objektstruktur. Für den effektiven Einsatz sollte man "in Objekten denken" und deren Verwendung genau bedenken.</li>
-							</ul>
-						</small>
+						<h4>Ein Beispiel: Das Eichhörnchen</h4>
+						<img src="img/intro_beispiele/eichhörnchen_ausgefuellt.PNG" alt="eichhörnchen ausgefüllt" style="height: 70%; background: transparent;">
 					</section>
+					<section>
+						<h4>Kombinationen und Beziehungen</h4>
+						<img src="img/intro_beispiele/geometrie.PNG" alt="geometrie" style="height: 70%; background: transparent;">
+					</section>
+				</section>
+
+
+				<!-- Paradigmenwechsel -->
+				<section>
+					<h4>Paradigmenwechsel</h4>
+					<img src="img/paradigmen.PNG" alt="paradigmen" style="height: 70%; background: transparent;">
+				</section>
+
+				<!-- Vorteile SE -->
+				<section>
+					<section>
+						<h4>Warum OOP im Software Engineering? <i class="fa fa-book" style="color:white;"></i></h4>
+						<img src="img/vorteile/vorteile_se.PNG" alt="paradigmen" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<img src="img/vorteile/vorteile_se_modul.PNG" alt="paradigmen" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<img src="img/vorteile/vorteile_se_information.PNG" alt="paradigmen" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<img src="img/vorteile/vorteile_se_wiederverwendung.PNG" alt="paradigmen" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<img src="img/vorteile/vorteile_se_robustheit.PNG" alt="paradigmen" style="height: 70%; background: transparent;">
+					</section>
+
 				</section>
 
 				<!-- Vokabular -->
 				<section>
 					<h4>Grundbegriffe</h4>
-					<img src="img/vokabular.PNG" alt="vokabular" style="height: 70%; background: transparent;">
+					<img src="img/grundbegriffe/vokabular.PNG" alt="vokabular" style="height: 70%; background: transparent;">
 				</section>
 
 
 				<!-- Programmiersprache, Tipps für Umsteiger  -->
 				<section>
-					<!--<section data-background-iframe="https://www.mentimeter.com/app/presentation/0b4391851ad5c008e7619fe4ec21dfa4/06ed35b4fd2a"></section>-->
-					<h4>Programmiersprache</h4>
-					<p>Python</p>
+					<section data-background-iframe="https://www.mentimeter.com/app/presentation/0b4391851ad5c008e7619fe4ec21dfa4/z599bhr12p3r"></section>
 				</section>
 
 				<!-- Der Auftrag -->
 				<section>
 					<section>
 					<h4>Frank Herzog</h4>
-						<p><small>Game-Production und Management (B.A), 3. Semester, 20 Jahre, Bekannter<br>
+						<p><small>Game-Production und Management (B.A), 5. Semester<br>
 						</small></p>
 
-						<img src="img/frank.jpg" alt="frank person" style="height: 400px; background: transparent;">
+						<img src="img/charaktere/frank.jpg" alt="frank person" style="height: 400px; background: transparent;">
 						<p><small>"Ich habe eine Idee..."</small></p>
 					</section>
 					<section>
@@ -129,7 +169,7 @@
 
 				<!-- Vokabular -->
 				<section>
-					<h4>Spielidee</h4>
+					<h4>Spielidee &nbsp;<i class="fa fa-clock-o" style="color:white;"></i></h4>
 					<img src="img/spielidee.PNG" alt="vokabular" style="height: 70%; background: transparent;">
 				</section>
 
@@ -143,11 +183,11 @@
 				<section>
 					<section>
 						<h4>Grundbegriffe (I)</h4>
-						<img src="img/vokabular_fokus_geruest.PNG" alt="geruest vokabular" style="height: 70%; background: transparent;">
+						<img src="img/grundbegriffe/vokabular_fokus_geruest.PNG" alt="geruest vokabular" style="height: 70%; background: transparent;">
 					</section>
 					<section>
 						<h4>Begriffe (I)</h4>
-						<img src="img/vokabular_geruest_erklaerung.PNG" alt="geruest erklaerung" style="height: 70%; background: transparent;">
+						<img src="img/grundbegriffe/vokabular_geruest_erklaerung.PNG" alt="geruest erklaerung" style="height: 70%; background: transparent;">
 					</section>
 					<section>
 						<h4>Code</h4> <!-- Dunder Functions, Scopes -->
@@ -178,11 +218,11 @@
 				<section>
 					<section>
 						<h4>Grundbegriffe (II)</h4>
-						<img src="img/vokabular_fokus_geruest_II.PNG" alt="geruest vokabular" style="height: 70%; background: transparent;">
+						<img src="img/grundbegriffe/vokabular_fokus_geruest_II.PNG" alt="geruest vokabular" style="height: 70%; background: transparent;">
 					</section>
 					<section>
 						<h4>Begriffe (II)</h4>
-						<img src="img/vokabular_geruest_erklaerung_II.PNG" alt="geruest erklaerung" style="height: 70%; background: transparent;">
+						<img src="img/grundbegriffe/vokabular_geruest_erklaerung_II.PNG" alt="geruest erklaerung" style="height: 70%; background: transparent;">
 					</section>
 					<section>
 						<h4>Code</h4>
@@ -208,13 +248,98 @@
 							# >>> standard-level
 						</script></code></pre>
 					</section>
+
+					<!-- Übung Name generator -->
+					<section>
+						<h4>Übung: Methode und Konstruktor &nbsp; <i class="fa fa-clock-o" style="color:white;"></i></h4>
+						<img src="img/uebungen/namensgenerator.PNG" alt="uebung generator" style="height: 70%; background: transparent;">
+					</section>
 				</section>
 
-				<!-- Übung Name generator -->
+
+				<!-- Grundbegriffe II -->
 				<section>
-					<h4>Übung</h4>
-					<img src="img/namensgenerator.PNG" alt="uebung generator" style="height: 70%; background: transparent;">
+					<section>
+						<h4>Grundbegriffe (III)</h4>
+						<img src="img/grundbegriffe/vokabular_fokus_geruest_III.PNG" alt="geruest vokabular" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<h4>Begriffe (III)</h4>
+						<img src="img/grundbegriffe/vokabular_geruest_erklaerung_III.PNG" alt="geruest erklaerung" style="height: 70%; background: transparent;">
+					</section>
+					<!-- Schaden -->
+					<section>
+						<h4>Zähne zeigen!</h4>
+						<p><small>Welchen Schaden machen die Zombies?<br></small></p>
+						<img src="img/zombies/3254305483_big_cartoon_zombie_with_a_sword.png" alt="zombie zaehne" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<h4>Liu Nianzu</h4>
+							<p><small>Data Science Management, 3. Semester<br>
+							</small></p>
+
+							<img src="img/charaktere/liu.jpg" alt="liu person" style="height: 400px; background: transparent;">
+							<p><small>"Vielleicht eine Verteilungsfunktion?"</small></p>
+					</section>
+					<section>
+						<h4>Normalverteilung</h4>
+						<img src="img/verteilung.PNG" alt="verteilung" style="height: 70%; background: transparent;">
+					</section>
+
+					<!-- Uebung Vererbung -->
+					<section>
+						<h4>Übung Vererbung &nbsp;<i class="fa fa-clock-o" style="color:white;"></i></h4>
+						<img src="img/uebungen/uebung_chaos_zombie.PNG" alt="vokabular" style="height: 70%; background: transparent;">
+					</section>
+
+					<section>
+						<h4>Übung: Vererbung</h4> <!-- Dunder Functions, Scopes -->
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|2|6-9|11-12|"><script type="text/template">
+							from zombie import Zombie
+							import numpy as np
+
+
+							class ChaosZombie(Zombie):
+								def __init__(self, variance, mean):
+									super(ChaosZombie, self).__init__()
+									self.variance = variance
+									self.mean = mean
+
+								def eat_brain(self):
+									return np.random.normal(loc=self.mean, scale=self.variance)
+						</script></code></pre>
+					</section>
 				</section>
+
+				<!-- Abschluss OOP -->
+				<section>
+					<section>
+						<h4>Ein Überblick &nbsp; <i class="fa fa-book" style="color:white;"></i></h4>
+						<img src="img/abschluss/zusammenhang_oop.PNG" alt="zusammenhang oop" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<h4>Ein Überblick &nbsp; <i class="fa fa-book" style="color:white;"></i></h4>
+						<img src="img/abschluss/intro_drei_phasen.PNG" alt="intro drei phasen" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<h4>Drei Phasen &nbsp; <i class="fa fa-book" style="color:white;"></i></h4>
+						<img src="img/abschluss/drei_phasen.PNG" alt="drei phasen" style="height: 70%; background: transparent;">
+					</section>
+				</section>
+
+
+				<section>
+					<section data-background-iframe="https://www.mentimeter.com/app/presentation/0b4391851ad5c008e7619fe4ec21dfa4/z599bhr12p3r"></section>
+					<section>
+						<h4>Meine Top 3 Lessons Learned</h4>
+						<img src="img/abschluss/meine_ll.PNG" alt="drei phasen" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<h4>Lernziele</h4>
+						<img src="img/abschluss/lernziele.PNG" alt="lernziele" style="height: 70%; background: transparent;">
+					</section>
+				</section>
+
 
 			</div>
 		</div>

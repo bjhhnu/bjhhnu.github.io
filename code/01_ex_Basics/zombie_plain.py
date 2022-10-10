@@ -1,9 +1,9 @@
 # Klasse
 class Zombie:
 
-   # Konstruktor
-   def __init__(self):
-           pass
+    # Konstruktor
+    def __init__(self):
+        pass
 
 
 # Instanz

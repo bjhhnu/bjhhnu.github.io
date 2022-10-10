@@ -1,11 +1,11 @@
 class Zombie:
+    # Klassenvariable
+    kind = 'standard-level'
 
-   # Klassenvariable
-   kind = 'standard-level'
+    def __init__(self, name):
+        # Instanzvariable
+        self.name = name
 
-   def __init__(self, name):
-            # Instanzvariable
-           self.name = name
 
 frankenstein = Zombie('Frankenstein')
 print(frankenstein.name)
