@@ -25,6 +25,7 @@
 						<p>
 							<small>Burkhard Hoppenstedt, 11.10.2022</small>
 						</p>
+						<img src="img/intro/qr_code.PNG" alt="qr code" style="height: 15%">
 					</section>
 
 					<section>
@@ -35,7 +36,21 @@
 					<!-- Vorstellung -->
 					<section>
 						<h4>Das bin ich</h4>
-						<img src="img/intro.PNG" alt="intro" style="height: 70%; background: transparent;">
+						<img src="img/intro/intro.PNG" alt="intro" style="height: 70%; background: transparent;">
+					</section>
+
+					<!-- Über diese Präsentation -->
+					<section>
+						<h4>Diese Präsentation</h4>
+						<small>
+							<ul>
+								<li>Materialien, Code und Folien sind unter https://github.com/bjhhnu/bjhhnu.github.io vorhanden.</li>
+								<li>Folien mit wichtigem Theorieinhalt sind mit dem Symbol <i class="fa fa-book" style="color:white;"></i> markiert. Ein Dokument
+								ohne die Gestalterischen Folien (z.B. zum Notizen machen) befindet sich unter <a href="material/Test.pdf">/materialien/Notizen.pdf</a>. </li>
+								<li>Wichtigste Steuerelemente für die Präsentation sind (ESC) für die Übersicht, (SPACE) für die Navigation in Reihenfolge und die Pfeiltasten.</li>
+							</ul>
+							<img src="img/intro/intro_praesentation.PNG" alt="intro" style="height: 12%; background: transparent;">
+						</small>
 					</section>
 				</section>
 
@@ -81,7 +96,9 @@
 					</section>
 				</section>
 
-
+				<section>
+						<h1>Theorie</h1>
+				</section>
 
 				<!-- EINE EINORDNUNG, GESCHICHTE der OOP, andere Programmierstile (Aspektorientiert, Datenorientiert) -->
 				<section>
@@ -109,14 +126,14 @@
 
 				<!-- Paradigmenwechsel -->
 				<section>
-					<h4>Paradigmenwechsel</h4>
+					<h4>Paradigmenwechsel &nbsp;<i class="fa fa-book" style="color:white;"></i></h4>
 					<img src="img/paradigmen.PNG" alt="paradigmen" style="height: 70%; background: transparent;">
 				</section>
 
 				<!-- Vorteile SE -->
 				<section>
 					<section>
-						<h4>Warum OOP im Software Engineering? <i class="fa fa-book" style="color:white;"></i></h4>
+						<h4>Warum OOP im Software Engineering? &nbsp;<i class="fa fa-book" style="color:white;"></i></h4>
 						<img src="img/vorteile/vorteile_se.PNG" alt="paradigmen" style="height: 70%; background: transparent;">
 					</section>
 					<section>
@@ -140,10 +157,8 @@
 					<img src="img/grundbegriffe/vokabular.PNG" alt="vokabular" style="height: 70%; background: transparent;">
 				</section>
 
-
-				<!-- Programmiersprache, Tipps für Umsteiger  -->
 				<section>
-					<section data-background-iframe="https://www.mentimeter.com/app/presentation/0b4391851ad5c008e7619fe4ec21dfa4/z599bhr12p3r"></section>
+						<h1>Umsetzung & Übung</h1>
 				</section>
 
 				<!-- Der Auftrag -->
@@ -169,15 +184,17 @@
 
 				<!-- Vokabular -->
 				<section>
-					<h4>Spielidee &nbsp;<i class="fa fa-clock-o" style="color:white;"></i></h4>
-					<img src="img/spielidee.PNG" alt="vokabular" style="height: 70%; background: transparent;">
+					<section>
+						<h4>Spielidee &nbsp;<i class="fa fa-clock-o" style="color:white;"></i></h4>
+						<img src="img/spielidee/spielidee.PNG" alt="vokabular" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<h4>Miro Brainstorming</h4>
+						<img src="img/spielidee/spielidee_miro.PNG" alt="miro" style="height: 70%; background: transparent;">
+					</section>
 				</section>
 
-				<!-- Bauplan -->
-				<section>
-					<h4>Der Bauplan</h4>
-					<img src="img/zombies/1912785207_blueprint_for_the_anatomy_of_a_zombie_on_an_old_paper.png" alt="zombie structure" style="height: 70%; background: transparent;">
-				</section>
+
 
 				<!-- Grundbegriffe I -->
 				<section>
@@ -188,6 +205,11 @@
 					<section>
 						<h4>Begriffe (I)</h4>
 						<img src="img/grundbegriffe/vokabular_geruest_erklaerung.PNG" alt="geruest erklaerung" style="height: 70%; background: transparent;">
+					</section>
+					<!-- Bauplan -->
+					<section>
+						<h4>Der Bauplan</h4>
+						<img src="img/zombies/1912785207_blueprint_for_the_anatomy_of_a_zombie_on_an_old_paper.png" alt="zombie structure" style="height: 70%; background: transparent;">
 					</section>
 					<section>
 						<h4>Code</h4> <!-- Dunder Functions, Scopes -->
@@ -224,6 +246,7 @@
 						<h4>Begriffe (II)</h4>
 						<img src="img/grundbegriffe/vokabular_geruest_erklaerung_II.PNG" alt="geruest erklaerung" style="height: 70%; background: transparent;">
 					</section>
+
 					<section>
 						<h4>Code</h4>
 						<p><small>Attribute. Klassen- und Instanzvariablen</small></p>
@@ -254,6 +277,51 @@
 						<h4>Übung: Methode und Konstruktor &nbsp; <i class="fa fa-clock-o" style="color:white;"></i></h4>
 						<img src="img/uebungen/namensgenerator.PNG" alt="uebung generator" style="height: 70%; background: transparent;">
 					</section>
+
+					<section>
+						<h4>Übung Konstruktor</h4>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|7-8|11|14-16|"><script type="text/template">
+							import random
+
+
+							class Zombie:
+
+								attribute_list = ["Grausame:r", "Verdorbene:r"]
+								# TODO: Ergänze eine weitere liste für mögliche Jobs
+								# (1 Zeile)
+
+								def __init__(self):
+									self.name = # TODO richtiger Aufruf (1 Zeile)
+
+								def generate_zombie_name(self):
+									# TODO Wähle ein zufälliges Element aus jeder Liste.
+									# Verwende z.B. random.choice (die random
+									# Bibliothek ist bereits importiert (2 Zeilen)
+									return "%s %s" % (random_attribute, random_job)
+						</script></code></pre>
+					</section>
+
+					<section>
+						<h4>Lösung Übung</h4>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|11-14|8-9|"><script type="text/template">
+							import random
+
+							class Zombie:
+
+								attribute_list = ["Grausame:r", "Verdorbene:r"]
+    							job_list = ["Jäger:in", "Lehrer:in"]
+
+								def __init__(self):
+									self.name = self.generate_zombie_name()
+
+								def generate_zombie_name(self):
+									random_attribute = random.choice(self.attribute_list)
+									random_job = random.choice(self.job_list)
+									return "%s %s" % (random_attribute, random_job)
+						</script></code></pre>
+					</section>
+
+
 				</section>
 
 
@@ -283,7 +351,7 @@
 					</section>
 					<section>
 						<h4>Normalverteilung</h4>
-						<img src="img/verteilung.PNG" alt="verteilung" style="height: 70%; background: transparent;">
+						<img src="img/spielidee/verteilung.PNG" alt="verteilung" style="height: 70%; background: transparent;">
 					</section>
 
 					<!-- Uebung Vererbung -->
@@ -309,6 +377,15 @@
 									return np.random.normal(loc=self.mean, scale=self.variance)
 						</script></code></pre>
 					</section>
+
+					<section>
+						<h4>Komposition</h4>
+						<img src="img/komposition/komposition.PNG" alt="komposition" style="height: 70%; background: transparent;">
+					</section>
+				</section>
+
+				<section>
+						<h1>Zusammenfassung & Abschluss</h1>
 				</section>
 
 				<!-- Abschluss OOP -->
@@ -322,7 +399,7 @@
 						<img src="img/abschluss/intro_drei_phasen.PNG" alt="intro drei phasen" style="height: 70%; background: transparent;">
 					</section>
 					<section>
-						<h4>Drei Phasen &nbsp; <i class="fa fa-book" style="color:white;"></i></h4>
+						<h4>Drei Phasen des objektorientierten Softwareentwurfs &nbsp; <i class="fa fa-book" style="color:white;"></i></h4>
 						<img src="img/abschluss/drei_phasen.PNG" alt="drei phasen" style="height: 70%; background: transparent;">
 					</section>
 				</section>
@@ -337,6 +414,17 @@
 					<section>
 						<h4>Lernziele</h4>
 						<img src="img/abschluss/lernziele.PNG" alt="lernziele" style="height: 70%; background: transparent;">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h4>Credits</h4>
+						<img src="img/abschluss/credits.PNG" alt="drei phasen" style="height: 70%; background: transparent;">
+					</section>
+					<section>
+						<h4>Diskussion</h4>
+						<img src="img/abschluss/diskussion.PNG" alt="diskussion" style="height: 70%; background: transparent;">
 					</section>
 				</section>
 
