@@ -15,11 +15,11 @@ class Game:
         self.zombies = self.generate_zombies()
 
     def generate_player(self):
-        return Player(life_points=1)
+        return Player(life_points=15)
 
     def load_questions(self):
         question_list = []
-        with open('questions.json', 'r') as f:
+        with open('questions.json', 'r', encoding='utf-8') as f:
             data = json.load(f)["questions"]
             for question in data:
                 question_list.append(Question(question["text"],question["answer"]))
@@ -47,5 +47,7 @@ class Game:
             if self.player.life_points < 0:
                 print(self.WIN_MESSAGE % self.player.correct_answers)
                 return
+            else:
+                print("Du hast noch %s Prozent Leben." % round(self.player.life_points, 2))
         print(self.LOOSE_MESSAGE)
 

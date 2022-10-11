@@ -1,10 +1,14 @@
  {
   "questions": [
-        { "text":"questiontext 1" ,
+        { "text":"Ein Objekt hat immer einen Zustand, ein Verhalten und eine Vergangenheit (a=richtig, b=falsch)" ,
+        "answer":"b" },
+        { "text":"Durch den Paradigmenwechsel zu OOP ergibt sich die Möglichkeit der Programmflusssteuerung durch Kommunikation der Objekte (a=richtig, b=falsch)" ,
         "answer":"a" },
-        { "text":"questiontext 2" ,
+        { "text":"Eine Klasse ist ein Bauplan für Objekte (a=richtig, b=falsch)" ,
         "answer":"a" },
-        { "text":"questiontext 3" ,
-        "answer":"a" }
+        { "text":"Die Vererbung definitiert den Informationsfluss zwischen Objekten (a=richtig, b=falsch)" ,
+        "answer":"b" },
+        { "text":"Durch das Prinzip der Informationsverdeckung lassen sich Objekte leichter warten (a=richtig, b=falsch)" ,
+        "answer":"b" }
   ]
 }

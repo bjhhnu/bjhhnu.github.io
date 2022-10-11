@@ -8,6 +8,8 @@ Die Präsentation kann entweder über [die Github Page](https://bjhhnu.github.io
 In der Präsentation kann die Leertaste zum Abspielen genutzt werden. Außerdem lassen sich die Pfeiltasten zur Navigation benutzen. Mit ESC gelangt man in eine Übersicht, in welcher man 
 mit Klick auf eine Folie in die Detailansicht wechselt.
 
-## Inhalte
+## Zusätzliche Inhalte
+* Im Ordner code liegen die verwendeten Codebausteine
+* Im Ordner Material findet sich das Notiz PDF sowie eine didaktische Konzeption
 
 
